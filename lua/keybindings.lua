@@ -34,14 +34,16 @@ map("n", "<leader>w", ":w<CR>", opt)
 vim.keymap.set("n", "j", "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 vim.keymap.set("n", "k", "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 
+map("n", "<C-b>", "<C-v>", opt)
+
 -- 上下滚动浏览
-map("n", "<C-j>", "5j", opt)
-map("n", "<C-k>", "5k", opt)
-map("v", "<C-j>", "5j", opt)
-map("v", "<C-k>", "5k", opt)
+map("n", "<A-j>", "5j", opt)
+map("n", "<A-k>", "5k", opt)
+map("v", "<A-j>", "5j", opt)
+map("v", "<A-k>", "5k", opt)
 -- ctrl u / ctrl + d  只移动9行，默认移动半屏
-map("n", "<C-u>", "10k", opt)
-map("n", "<C-d>", "10j", opt)
+map("n", "<A-u>", "10k", opt)
+map("n", "<A-d>", "10j", opt)
 
 -- magic search
 map("n", "/", "/\\v", { noremap = true, silent = false })
@@ -73,14 +75,14 @@ map("n", "s", "", opt)
 map("n", "sv", ":vsp<CR>", opt)
 map("n", "sh", ":sp<CR>", opt)
 -- 关闭当前
-map("n", "sc", "<C-w>c", opt)
+map("n", "<C-c>", "<C-w>c", opt)
 -- 关闭其他
 map("n", "so", "<C-w>o", opt) -- close others
 -- alt + hjkl  窗口之间跳转
-map("n", "<A-h>", "<C-w>h", opt)
-map("n", "<A-j>", "<C-w>j", opt)
-map("n", "<A-k>", "<C-w>k", opt)
-map("n", "<A-l>", "<C-w>l", opt)
+map("n", "<C-h>", "<C-w>h", opt)
+map("n", "<C-j>", "<C-w>j", opt)
+map("n", "<C-k>", "<C-w>k", opt)
+map("n", "<C-l>", "<C-w>l", opt)
 -- <leader> + hjkl 窗口之间跳转
 map("n", "<leader>h", "<C-w>h", opt)
 map("n", "<leader>j", "<C-w>j", opt)
@@ -154,8 +156,8 @@ pluginKeys.nvimTreeList = { -- 打开文件或文件夹
 }
 -- bufferline
 -- 左右Tab切换
-map("n", "<C-h>", ":BufferLineCyclePrev<CR>", opt)
-map("n", "<C-l>", ":BufferLineCycleNext<CR>", opt)
+map("n", "<A-h>", ":BufferLineCyclePrev<CR>", opt)
+map("n", "<A-l>", ":BufferLineCycleNext<CR>", opt)
 -- "moll/vim-bbye" 关闭当前 buffer
 map("n", "<leader>bc", ":Bdelete!<CR>", opt)
 -- 关闭左/右侧标签页

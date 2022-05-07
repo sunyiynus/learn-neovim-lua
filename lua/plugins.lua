@@ -93,7 +93,7 @@ packer.startup({
     use("tami5/lspsaga.nvim")
     -- 代码格式化
     use("mhartington/formatter.nvim")
-    use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
+    --use({ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" })
     -- TypeScript 增强
     use({ "jose-elias-alvarez/nvim-lsp-ts-utils", requires = "nvim-lua/plenary.nvim" })
     -- Lua 增强
