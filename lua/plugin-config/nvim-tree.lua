@@ -25,7 +25,7 @@ nvim_tree.setup({
   -- 隐藏 .文件 和 node_modules 文件夹
   filters = {
     dotfiles = true,
-    custom = { "node_modules" },
+    custom = { "node_modules", "build" },
   },
   view = {
     -- 宽度

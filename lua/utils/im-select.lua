@@ -3,7 +3,9 @@ local M = {}
 M.defaultIM = "com.apple.keylayout.ABC"
 M.currentIM = M.defaultIM
 
+-- brew install im-select
 M.macInsertLeave = function()
+  -- M.currentIM = vim.fn.system({ "im-select" })
   M.currentIM = vim.fn.system({ "im-select" })
   vim.cmd(":silent :!im-select" .. " " .. M.defaultIM)
 end

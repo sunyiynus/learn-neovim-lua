@@ -12,7 +12,10 @@ end
 
 vim.g.nvim_tree_respect_buf_cwd = 1
 project.setup({
-  detection_methods = { "pattern" },
+  active = true,
+  on_config_done = nil,
+  manual_mod = false,
+  detection_methods = { "lsp","pattern" },
   patterns = {
     "README.md",
     "Cargo.toml",
@@ -24,7 +27,12 @@ project.setup({
     ".bzr",
     ".svn",
     "Makefile",
+    "CMakeLists.txt",
   },
+  exclude_dirs = {
+    "cmake-build*"
+  },
+
 })
 
 local status_telescope, telescope = pcall(require, "telescope")

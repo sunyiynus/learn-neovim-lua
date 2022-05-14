@@ -15,6 +15,7 @@ local servers = {
   tsserver = require("lsp.config.ts"),
   rust_analyzer = require("lsp.config.rust"),
   -- remark_ls = require("lsp.lang.markdown"),
+  -- clangd = require("lsp.config.clangd"),
 }
 
 -- 自动安装 Language Servers

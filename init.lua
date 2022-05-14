@@ -22,15 +22,15 @@ require("plugin-config.surround")
 require("plugin-config.comment")
 require("plugin-config.nvim-autopairs")
 -- Git
--- require("plugin-config.gitsigns")
+require("plugin-config.gitsigns")
 -- 内置LSP
 require("lsp.setup")
 require("lsp.cmp")
 require("lsp.ui")
 -- require("lsp.formatter")
--- require("lsp.null-ls")
+require("lsp.null-ls")
 -- utils
--- require("utils.change-colorscheme")
+require("utils.change-colorscheme")
 -- 复制到windows剪贴板
 -- require('utils.fix-yank')
 -- require("utils.global")
@@ -38,4 +38,4 @@ require("lsp.ui")
 --
 
 -- require("dap.vimspector")
-require("dap.nvim-dap")
+-- require("dap.nvim-dap")
